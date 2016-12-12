@@ -49,6 +49,6 @@ def write_word(old_file, dat_file, new_file):
 path = 'word'
 new_file = path+'new-file-name-{}.docx'
 dat_file = path+'database.xlsx'
-old_file = path+'This is a blank document.docx'
+old_file = path+'template.docx'
 
 write_word(old_file, dat_file, new_file)
