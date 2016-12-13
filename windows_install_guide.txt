@@ -33,4 +33,8 @@ install pywin32
 install pyinstaller
     pip install pyinstaller
     pyinstaller.exe --onefile parse_word.py
+    binary file is under dist/
+    mv dist/parse_word.exe .
+    remove dist/ build/ parse_word.spec
+    
     
