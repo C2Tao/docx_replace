@@ -47,8 +47,9 @@ def write_word(old_file, dat_file, new_file):
 #path = r'C:\\Users\\c2tao\\Desktop\\word\\'
 #path ='/mnt/c/Users/c2tao/Desktop/word/'
 path = 'word/'
+if not os.path.exists(path): os.makedirs(path)
+
 new_file = path+'new-file-name-{}.docx'
 dat_file = 'database.xlsx'
 old_file = 'template.docx'
-
 write_word(old_file, dat_file, new_file)
