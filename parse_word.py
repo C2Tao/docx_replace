@@ -46,9 +46,9 @@ def write_word(old_file, dat_file, new_file):
 
 #path = r'C:\\Users\\c2tao\\Desktop\\word\\'
 #path ='/mnt/c/Users/c2tao/Desktop/word/'
-path = 'word'
+path = 'word/'
 new_file = path+'new-file-name-{}.docx'
-dat_file = path+'database.xlsx'
-old_file = path+'template.docx'
+dat_file = 'database.xlsx'
+old_file = 'template.docx'
 
 write_word(old_file, dat_file, new_file)

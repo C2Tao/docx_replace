@@ -1,0 +1,36 @@
+install python
+    download python2.7 32 bit and install using gui
+
+install python-pip
+    download intall-pip.py from https://pip.pypa.io/en/stable/installing/
+    python install-pip.py
+    
+#########################################
+
+install lxml
+    download lxml-3.7.0-cp27-cp27m-win32.whl from http://www.lfd.uci.edu/~gohlke/pythonlibs/
+    pip install lxml-3.7.0-cp27-cp27m-win32.whl
+
+install python-docx
+    pip install python-docx
+
+#########################################
+ 
+install openpyxl
+    pip install openpyxl
+    fix __init__ file bug for openpyxl according to:
+    http://stackoverflow.com/questions/25121356/python-importerror-cannot-import-name-version
+
+    
+#########################################
+compile stand-alone exe
+    follow instructions https://mborgerson.com/creating-an-executable-from-a-python-script
+
+install pywin32
+    install using installer
+    https://sourceforge.net/projects/pywin32/files/pywin32/Build%20220/pywin32-220.win32-py2.7.exe/download
+
+install pyinstaller
+    pip install pyinstaller
+    pyinstaller.exe --onefile parse_word.py
+    
