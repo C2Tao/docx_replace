@@ -16,11 +16,15 @@ def replace_pattern(document, old_text, new_text):
 
 
 def read_excel(dat_file):
-    wb = load_workbook(filename = dat_file)
+    wb = load_workbook(filename = dat_file, data_only=True)
     ws = wb.get_active_sheet()
     data = {}
     for i in range(ws.max_column):
-        a = chr(ord('A') + i)
+        k = i+1
+        a = ''
+        while k > 0:
+            a = chr(ord('A') + (k-1)%26) + a
+            k = (k-1)/26
         if not ws[a+'1'].value: break
         for j in range(ws.max_row):
             ai = a+str(j+1)
